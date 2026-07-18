@@ -1,0 +1,6 @@
+arm,n,mean_cognitive_change,std_cognitive_change,mean_viability,vs_placebo_diff,cohens_d,t_stat,significant
+Placebo,2000,-1.614,1.011,0.9807,,,,
+Aducanumab,2000,-1.308,0.986,0.9785,-0.307,-0.307,-9.71,True
+Lecanemab,2000,-1.305,0.98,0.9796,-0.309,-0.31,-9.814,True
+Donepezil,2000,-1.305,0.958,0.9797,-0.309,-0.314,-9.918,True
+Memantine,2000,-1.499,1.009,0.9786,-0.116,-0.115,-3.625,True

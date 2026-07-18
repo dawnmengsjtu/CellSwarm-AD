@@ -1,0 +1,5 @@
+drug,dose,route,Cmax,Tmax_h,AUC,half_life_h,clearance
+aducanumab,700.0,iv_infusion,221.7713,1.44,12252.89,503.9,0.0552
+lecanemab,700.0,iv_infusion,227.9847,1.35,9906.01,144.0,0.0667
+donepezil,10.0,oral,0.0115,3.37,0.97,70.0,8.316
+memantine,20.0,oral,0.0299,5.39,2.42,63.0,6.93

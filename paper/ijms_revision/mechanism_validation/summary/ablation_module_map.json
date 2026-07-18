@@ -1,0 +1,16 @@
+{
+  "combination": {
+    "drugs": [
+      "donepezil",
+      "memantine"
+    ],
+    "rule": "Bliss independence using each drug's repository PKModel/PDModel"
+  },
+  "conditions": {
+    "full": "ADCascade + patient APOE4/A-beta heterogeneity + repository PK/PD",
+    "no_patient_heterogeneity": "Trial-level only: baseline_abeta flattened; this is not a tissue-spatial ablation",
+    "no_inflammation": "ADCascade state.nfkb reset to 0 and microglia_state reset to M0 after each step",
+    "no_pkpd": "Combined repository PK/PD effect set to zero; cascade and heterogeneity retained"
+  },
+  "spatial_separation": "The trial simulator does not call layer1_tissue; tissue spatial ablation is reported by grid_convergence.py outputs."
+}

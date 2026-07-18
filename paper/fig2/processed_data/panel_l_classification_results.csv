@@ -1,0 +1,10 @@
+true_label,pred_label,count_mean,count_sem,n_replicates,pct_mean
+Neuron,Neuron,50.0,0.0,20,100.0
+Neuron,Microglia,0.0,0.0,20,0.0
+Neuron,Astrocyte,0.0,0.0,20,0.0
+Microglia,Neuron,0.0,0.0,20,0.0
+Microglia,Microglia,50.0,0.0,20,100.0
+Microglia,Astrocyte,0.0,0.0,20,0.0
+Astrocyte,Neuron,0.0,0.0,20,0.0
+Astrocyte,Microglia,0.0,0.0,20,0.0
+Astrocyte,Astrocyte,50.0,0.0,20,100.0

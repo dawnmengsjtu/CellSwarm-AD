@@ -1,0 +1,12 @@
+# Core model and configuration
+numpy>=1.24
+scipy>=1.10
+PyYAML>=6.0
+
+# Patient-level analyses and manuscript figures
+pandas>=1.5
+statsmodels>=0.14
+matplotlib>=3.7
+
+# Verification
+pytest>=7.0

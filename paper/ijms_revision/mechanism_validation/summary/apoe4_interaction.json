@@ -1,0 +1,120 @@
+{
+  "formula": "week78_change ~ lecanemab * apoe4_copies + centered_baseline_cognitive + centered_age",
+  "covariance": "HC3",
+  "seed": 20260716,
+  "n_per_arm": 300,
+  "analysis_population": "Patients with an observed week-78 outcome (trial completers)",
+  "participant_flow": {
+    "n_randomized_total": 600,
+    "n_randomized_by_treatment": {
+      "placebo": 300,
+      "lecanemab": 300
+    },
+    "n_week78_completers_total": 510,
+    "n_week78_completers_by_treatment": {
+      "placebo": 249,
+      "lecanemab": 261
+    },
+    "n_dropped_before_week78_total": 90,
+    "n_dropped_before_week78_by_treatment": {
+      "placebo": 51,
+      "lecanemab": 39
+    }
+  },
+  "dropout_handling": "Patients who dropped before week 78 are retained in the raw randomized cohort; their observed_change_at_exit is recorded, week78_change is missing, and they are excluded from the completer-only week-78 interaction analysis.",
+  "interpretation": "Interaction is the change in lecanemab effect per additional APOE4 allele.",
+  "coefficients": [
+    {
+      "term": "intercept",
+      "estimate": -1.6989702004472658,
+      "std_error_hc3": 0.07759016593279197,
+      "ci95_low": -1.851410203095433,
+      "ci95_high": -1.5465301977990986,
+      "t": -21.896720802464852,
+      "df": 504,
+      "p_value": 3.489063541981328e-75
+    },
+    {
+      "term": "lecanemab",
+      "estimate": 0.2529394652345297,
+      "std_error_hc3": 0.10885823927251713,
+      "ci95_low": 0.039067641615139065,
+      "ci95_high": 0.4668112888539203,
+      "t": 2.323567484876526,
+      "df": 504,
+      "p_value": 0.020545577783683405
+    },
+    {
+      "term": "apoe4_copies",
+      "estimate": -0.1645356247380271,
+      "std_error_hc3": 0.10651413791467738,
+      "ci95_low": -0.37380203460554895,
+      "ci95_high": 0.044730785129494716,
+      "t": -1.544730380016102,
+      "df": 504,
+      "p_value": 0.12303913183888207
+    },
+    {
+      "term": "lecanemab_x_apoe4_copies",
+      "estimate": -0.017791113633617718,
+      "std_error_hc3": 0.14016757147004663,
+      "ci95_low": -0.2931758187596403,
+      "ci95_high": 0.25759359149240485,
+      "t": -0.1269274586627166,
+      "df": 504,
+      "p_value": 0.8990484354446898
+    },
+    {
+      "term": "baseline_cognitive_centered",
+      "estimate": 0.012943963033964539,
+      "std_error_hc3": 0.0191881567610926,
+      "ci95_low": -0.024754663232772086,
+      "ci95_high": 0.05064258930070116,
+      "t": 0.6745808466715638,
+      "df": 504,
+      "p_value": 0.5002514124469575
+    },
+    {
+      "term": "age_centered",
+      "estimate": -0.0015888233449358926,
+      "std_error_hc3": 0.004870274370690071,
+      "ci95_low": -0.01115736375260016,
+      "ci95_high": 0.007979717062728375,
+      "t": -0.3262287140325468,
+      "df": 504,
+      "p_value": 0.7443867329785268
+    }
+  ],
+  "cell_counts_and_means": {
+    "placebo_apoe0": {
+      "n_randomized": 167,
+      "n_week78_completers": 140,
+      "week78_mean": -1.7060505551270373
+    },
+    "placebo_apoe1": {
+      "n_randomized": 117,
+      "n_week78_completers": 97,
+      "week78_mean": -1.8371549721798226
+    },
+    "placebo_apoe2": {
+      "n_randomized": 16,
+      "n_week78_completers": 12,
+      "week78_mean": -2.1182479277680266
+    },
+    "lecanemab_apoe0": {
+      "n_randomized": 165,
+      "n_week78_completers": 141,
+      "week78_mean": -1.486995965993787
+    },
+    "lecanemab_apoe1": {
+      "n_randomized": 116,
+      "n_week78_completers": 105,
+      "week78_mean": -1.5228920023320338
+    },
+    "lecanemab_apoe2": {
+      "n_randomized": 19,
+      "n_week78_completers": 15,
+      "week78_mean": -2.1960230315289873
+    }
+  }
+}

@@ -1,0 +1,2 @@
+drug_a,drug_b,effect_a,effect_b,expected,observed,interaction,CI
+Donepezil,Memantine,0.7696,0.3248,0.8444,0.8444,additive,1.0

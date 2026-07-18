@@ -1,0 +1,61 @@
+# CellSwarm-AD Default Configuration
+
+simulation:
+  dt: 0.01
+  steps: 1000
+  seed: 42
+
+layer0_cell:
+  neuron:
+    initial_viability: 1.0
+    initial_calcium: 0.1
+    initial_tau_p: 0.05
+  microglia:
+    initial_nfkb: 0.1
+    activation_threshold: 0.5
+  astrocyte:
+    initial_reactivity: 0.1
+    glutamate_uptake_rate: 0.8
+
+layer1_tissue:
+  environment:
+    width: 50
+    height: 50
+    diffusion_rate: 0.1
+    decay_rate: 0.01
+
+layer2_pathology:
+  abeta:
+    production_rate: 0.1
+    aggregation_rate: 0.05
+    clearance_rate: 0.02
+  tau:
+    phosphorylation_rate: 0.08
+    tangle_rate: 0.01
+    clearance_rate: 0.01
+  ode:
+    amyloid:
+      k_prod: 0.1
+      k_clear: 0.02
+      k_agg: 0.05
+      k_plaque: 0.01
+    calcium:
+      leak_rate: 0.01
+      pump_rate: 0.05
+      channel_rate: 0.1
+  optimization:
+    population_size: 20
+    generations: 50
+    mutation_rate: 0.1
+
+layer3_orchestrator:
+  llm:
+    backend: mock
+    model_name: mock-model
+    temperature: 0.7
+    max_tokens: 1024
+
+ablation:
+  enable_spatial: true      # Layer 1 spatial diffusion
+  enable_inflammation: true  # NF-κB inflammatory cascade in Layer 2
+  enable_pkpd: true          # PK/PD drug effect in Layer 2

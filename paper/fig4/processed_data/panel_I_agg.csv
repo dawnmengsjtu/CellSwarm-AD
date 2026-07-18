@@ -1,0 +1,71 @@
+param,perturbation,final_viability_mean,final_viability_sem
+K_d (TauN),-0.1,0.0,0.0
+K_d (TauN),-0.2,0.0,0.0
+K_d (TauN),0.0,0.0,0.0
+K_d (TauN),0.1,0.0,0.0
+K_d (TauN),0.2,0.0,0.0
+K_m (AbCa),-0.1,0.0,0.0
+K_m (AbCa),-0.2,0.0,0.0
+K_m (AbCa),0.0,0.0,0.0
+K_m (AbCa),0.1,0.0,0.0
+K_m (AbCa),0.2,0.0,0.0
+alpha (CaTau),-0.1,0.0,0.0
+alpha (CaTau),-0.2,0.0,0.0
+alpha (CaTau),0.0,0.0,0.0
+alpha (CaTau),0.1,0.0,0.0
+alpha (CaTau),0.2,0.0,0.0
+ca_threshold,-0.1,0.0,0.0
+ca_threshold,-0.2,0.0,0.0
+ca_threshold,0.0,0.0,0.0
+ca_threshold,0.1,0.0,0.0
+ca_threshold,0.2,0.0,0.0
+k_abeta_ca,-0.1,0.0,0.0
+k_abeta_ca,-0.2,0.0,0.0
+k_abeta_ca,0.0,0.0,0.0
+k_abeta_ca,0.1,0.0,0.0
+k_abeta_ca,0.2,0.0,0.0
+k_act (AbMg),-0.1,0.0,0.0
+k_act (AbMg),-0.2,0.0,0.0
+k_act (AbMg),0.0,0.0,0.0
+k_act (AbMg),0.1,0.0,0.0
+k_act (AbMg),0.2,0.0,0.0
+k_clearance,-0.1,0.0,0.0
+k_clearance,-0.2,0.0,0.0
+k_clearance,0.0,0.0,0.0
+k_clearance,0.1,0.0,0.0
+k_clearance,0.2,0.0,0.0
+k_damage (MgN),-0.1,0.0,0.0
+k_damage (MgN),-0.2,0.0,0.0
+k_damage (MgN),0.0,0.0,0.0
+k_damage (MgN),0.1,0.0,0.0
+k_damage (MgN),0.2,0.0,0.0
+k_damage (TauN),-0.1,0.0,0.0
+k_damage (TauN),-0.2,0.0,0.0
+k_damage (TauN),0.0,0.0,0.0
+k_damage (TauN),0.1,0.0,0.0
+k_damage (TauN),0.2,0.0,0.0
+k_dephos,-0.1,0.0,0.0
+k_dephos,-0.2,0.0,0.0
+k_dephos,0.0,0.0,0.0
+k_dephos,0.1,0.0,0.0
+k_dephos,0.2,0.0,0.0
+k_nfkb_decay,-0.1,0.0,0.0
+k_nfkb_decay,-0.2,0.0,0.0
+k_nfkb_decay,0.0,0.0,0.0
+k_nfkb_decay,0.1,0.0,0.0
+k_nfkb_decay,0.2,0.0,0.0
+k_phos_base,-0.1,0.0,0.0
+k_phos_base,-0.2,0.0,0.0
+k_phos_base,0.0,0.0,0.0
+k_phos_base,0.1,0.0,0.0
+k_phos_base,0.2,0.0,0.0
+k_protect (MgN),-0.1,0.0,0.0
+k_protect (MgN),-0.2,0.0,0.0
+k_protect (MgN),0.0,0.0,0.0
+k_protect (MgN),0.1,0.0,0.0
+k_protect (MgN),0.2,0.0,0.0
+trem2_inh,-0.1,0.0,0.0
+trem2_inh,-0.2,0.0,0.0
+trem2_inh,0.0,0.0,0.0
+trem2_inh,0.1,0.0,0.0
+trem2_inh,0.2,0.0,0.0

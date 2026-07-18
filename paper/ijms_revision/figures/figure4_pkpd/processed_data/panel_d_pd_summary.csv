@@ -1,0 +1,5 @@
+drug,Emax,EC50,Hill_n,drug_type
+aducanumab,0.7,1.0,1.5,antagonist
+lecanemab,0.59,0.8,1.2,antagonist
+donepezil,0.8,0.015,1.0,antagonist
+memantine,0.6,0.5,1.0,antagonist

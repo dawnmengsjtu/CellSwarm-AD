@@ -1,0 +1,2 @@
+drug,dose_mg,n_doses,dosing_interval_h,Cmax,Css_avg,half_life_h
+donepezil,10.0,14,24.0,0.053018,0.050104,70.0

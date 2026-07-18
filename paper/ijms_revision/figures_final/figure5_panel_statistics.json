@@ -1,0 +1,200 @@
+{
+  "figure": "Figure 5, nine-panel Nature-style rebuild",
+  "sources": {
+    "primary_patient_visits": "paper/ijms_revision/clinical_trial/engine_results/primary_patient_visits.csv",
+    "primary_gee_week78_terms": "paper/ijms_revision/clinical_trial/engine_results/primary_gee_week78_terms.csv",
+    "monte_carlo_replicates": "paper/ijms_revision/clinical_trial/engine_results/monte_carlo_replicates.csv",
+    "apoe4_patient_level": "paper/ijms_revision/mechanism_validation/raw/apoe4_patient_level.csv",
+    "apoe4_interaction": "paper/ijms_revision/mechanism_validation/summary/apoe4_interaction.json"
+  },
+  "primary_trial": {
+    "n_randomized": 800,
+    "n_per_arm": {
+      "placebo": 200,
+      "lecanemab": 200,
+      "donepezil": 200,
+      "donepezil+memantine": 200
+    },
+    "n_week78_observed": {
+      "placebo": 170,
+      "lecanemab": 170,
+      "donepezil": 170,
+      "donepezil+memantine": 170
+    },
+    "week78_mean": {
+      "placebo": -1.7470875535048067,
+      "lecanemab": -1.3676531526438582,
+      "donepezil": -1.427867717890485,
+      "donepezil+memantine": -1.3687347152886116
+    },
+    "week78_sem": {
+      "placebo": 0.07144418426608537,
+      "lecanemab": 0.07594598302421725,
+      "donepezil": 0.06675992200997218,
+      "donepezil+memantine": 0.06463489953458407
+    },
+    "week78_viability_mean": {
+      "placebo": 0.9760353728770651,
+      "lecanemab": 0.9737115064557783,
+      "donepezil": 0.9818503699997433,
+      "donepezil+memantine": 0.975978333975884
+    },
+    "week78_viability_ci95": {
+      "placebo": [
+        0.9686517626896582,
+        0.983418983064472
+      ],
+      "lecanemab": [
+        0.9657349303250251,
+        0.9816880825865315
+      ],
+      "donepezil": [
+        0.9763215948267128,
+        0.9873791451727738
+      ],
+      "donepezil+memantine": [
+        0.9686001138388107,
+        0.9833565541129572
+      ]
+    },
+    "single_trial_cohens_d": {
+      "lecanemab": 0.3947037421764156,
+      "donepezil": 0.35409936212358367,
+      "donepezil+memantine": 0.42595931023657735
+    },
+    "gee": [
+      {
+        "term": "C(treatment)[T.lecanemab]:C(visit_week)[T.78]",
+        "estimate": 0.3683136788354322,
+        "robust_se": 0.101793159115465,
+        "p_value": 0.0002965952803484,
+        "ci95_low": 0.1688027530965656,
+        "ci95_high": 0.567824604574299
+      },
+      {
+        "term": "C(treatment)[T.donepezil]:C(visit_week)[T.78]",
+        "estimate": 0.3154329719767011,
+        "robust_se": 0.0954688825692584,
+        "p_value": 0.0009530235727721,
+        "ci95_low": 0.1283174004966709,
+        "ci95_high": 0.5025485434567314
+      },
+      {
+        "term": "C(treatment)[T.donepezil+memantine]:C(visit_week)[T.78]",
+        "estimate": 0.3697969227708269,
+        "robust_se": 0.0942022980382418,
+        "p_value": 8.652762643484247e-05,
+        "ci95_low": 0.1851638113549648,
+        "ci95_high": 0.554430034186689
+      }
+    ]
+  },
+  "monte_carlo": {
+    "lecanemab": {
+      "n": 20,
+      "mean_d": 0.33740821001100707,
+      "q025_d": 0.2031916901439483,
+      "q975_d": 0.5402227406304565
+    },
+    "donepezil": {
+      "n": 20,
+      "mean_d": 0.3594854718634003,
+      "q025_d": 0.19726760071139013,
+      "q975_d": 0.5474176566817003
+    },
+    "donepezil+memantine": {
+      "n": 20,
+      "mean_d": 0.32608722987745475,
+      "q025_d": 0.1510792902122134,
+      "q975_d": 0.4842691704260352
+    }
+  },
+  "apoe4_interaction": {
+    "term": "lecanemab_x_apoe4_copies",
+    "estimate": -0.017791113633617718,
+    "std_error_hc3": 0.14016757147004663,
+    "ci95_low": -0.2931758187596403,
+    "ci95_high": 0.25759359149240485,
+    "t": -0.1269274586627166,
+    "df": 504,
+    "p_value": 0.8990484354446898
+  },
+  "apoe4_analysis_population": {
+    "definition": "Patients with an observed week-78 outcome (trial completers)",
+    "n_randomized_total": 600,
+    "n_randomized_by_treatment": {
+      "placebo": 300,
+      "lecanemab": 300
+    },
+    "n_week78_completers_total": 510,
+    "n_week78_completers_by_treatment": {
+      "placebo": 249,
+      "lecanemab": 261
+    },
+    "n_dropped_before_week78_total": 90,
+    "n_dropped_before_week78_by_treatment": {
+      "placebo": 51,
+      "lecanemab": 39
+    },
+    "cell_counts_and_means": {
+      "placebo_apoe0": {
+        "n_randomized": 167,
+        "n_week78_completers": 140,
+        "week78_mean": -1.7060505551270373
+      },
+      "placebo_apoe1": {
+        "n_randomized": 117,
+        "n_week78_completers": 97,
+        "week78_mean": -1.8371549721798226
+      },
+      "placebo_apoe2": {
+        "n_randomized": 16,
+        "n_week78_completers": 12,
+        "week78_mean": -2.1182479277680266
+      },
+      "lecanemab_apoe0": {
+        "n_randomized": 165,
+        "n_week78_completers": 141,
+        "week78_mean": -1.486995965993787
+      },
+      "lecanemab_apoe1": {
+        "n_randomized": 116,
+        "n_week78_completers": 105,
+        "week78_mean": -1.5228920023320338
+      },
+      "lecanemab_apoe2": {
+        "n_randomized": 19,
+        "n_week78_completers": 15,
+        "week78_mean": -2.1960230315289873
+      }
+    },
+    "dropout_handling": "Patients who dropped before week 78 are retained in the raw randomized cohort; their observed_change_at_exit is recorded, week78_change is missing, and they are excluded from the completer-only week-78 interaction analysis."
+  },
+  "baseline_abeta_lecanemab_regression": {
+    "n": 170,
+    "slope": -0.5911945335266011,
+    "ci95_low": -2.061654558229933,
+    "ci95_high": 0.8792654911767306,
+    "p_value": 0.43069770269781604,
+    "r_squared": 0.0032438092094614346,
+    "covariance": "HC3",
+    "note": "Baseline A\u03b2 consists of three modeled strata; horizontal point jitter is display-only."
+  },
+  "display": {
+    "width_mm": 183,
+    "height_mm": 168,
+    "raster_dpi": 600,
+    "panel_labels": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i"
+    ],
+    "display_only_jitter_seed": 20260717
+  }
+}

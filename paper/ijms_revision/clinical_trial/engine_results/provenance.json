@@ -1,0 +1,44 @@
+{
+  "authority": "CellSwarm-AD ADCascade plus repository PK/PD models",
+  "primary_trial": {
+    "seed": 20260716,
+    "n_per_arm": 200,
+    "n_total": 800,
+    "visits": [
+      0,
+      13,
+      26,
+      39,
+      52,
+      65,
+      78
+    ],
+    "dropout": "exact 15% MCAR per arm"
+  },
+  "cognitive_mapping": {
+    "source": "TrialSimulator._simulate_patient",
+    "calibration_k": 0.34,
+    "observation_noise": "Gaussian independent increments; week-78 SD=0.9"
+  },
+  "combination": {
+    "drugs": [
+      "donepezil",
+      "memantine"
+    ],
+    "rule": "Bliss independence, explicit structural assumption",
+    "pd_effect": 0.6603858252354843
+  },
+  "gee": {
+    "model": "Gaussian GEE",
+    "formula": "cognitive_change ~ baseline_score + C(treatment) * C(visit_week)",
+    "cluster": "patient_id",
+    "working_correlation": "exchangeable",
+    "robust_se": true,
+    "n_observations": 5152,
+    "estimated_working_correlation": 0.5436901945548294
+  },
+  "monte_carlo": {
+    "replicates": 20,
+    "pooled_as_one_trial": false
+  }
+}
